@@ -1,0 +1,254 @@
+body {
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    color: #232323;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-family: 'Montserrat', verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Open Sans', verdana, sans-serif;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-size: 1.25 rem;
+    color: #373737;
+    text-decoration: none;
+}
+
+/*Navigation*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+nav img {
+    position: absolute;
+    margin-left: 25px;
+    top: 10px;
+    bottom: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    position: relative;
+    text-transform: uppercase;
+}
+
+label #hamburger-icon,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+/*Home page*/
+.welcome {
+    background-image: url('../images/header-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#welcome-text {
+    color: white;
+}
+
+.cta {
+    background-color: #11B4D9;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 9px;
+}
+
+.cta:hover {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.cta-button {
+    padding-top: 30px;
+}
+
+.welcome-content {
+    position: relative;
+    text-align: center;
+    top: 135px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.arrivals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-gap: 10px;
+}
+
+.arrivals-1 {
+    flex: 1;
+}
+
+.arrivals-2 {
+    flex: 1;
+}
+
+.arrivals-3 {
+    flex: 1;
+}
+
+.arrivals-text {
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.cta-end {
+    position: relative;
+    margin-top: 50px;
+    min-height: 200px;
+    background-color: #fff;
+}
+
+.cta-end-div {
+    display: block;
+    text-align: center;
+    vertical-align: center;
+    margin: 100px auto 100px auto;
+}
+
+.cta-explore {
+    background-color: #11B4D9;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 9px;
+}
+
+.cta-explore:hover {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.cta-explore-div {
+    padding-top: 30px;
+}
+
+#statement-1 {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    color: #373737;
+    font-weight: lighter;
+    border-bottom: 1px solid #11B4D9;
+    padding-bottom: 10px;
+}
+
+#statement-2 {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    color: #224F59;
+    font-weight: semibold;
+    padding-top: 10px;
+}
+
+/*Footer*/
+footer {
+    min-height: 300px;
+    background-color: #053641;
+    color: white;
+    margin-top: 100px;
+}
+
+/*Navigation mobile*/
+
+@media (max-width: 600px) {
+    label #hamburger-icon {
+        display: block;
+        color: #224F59;
+
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #224F59;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .0.1s;
+    }
+    nav ul li {
+        display: block;
+        margin: 30px;
+        line-height: 50px;
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;
+        color: #fff;
+    }
+
+    #menu-checkbox:checked ~ ul {
+        left: 0;
+    }
+
+    #menu-checkbox:checked ~ label #hamburger-icon {
+        display: none;
+    }
+
+    #menu-checkbox:checked ~ label #cancel {
+        display: block;
+        color: #224F59;
+    }
+
+    .arrivals {
+        grid-template-columns: (2, 1fr);
+    }
+
+}
