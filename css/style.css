@@ -22,6 +22,7 @@ h2 {
     font-size: 2rem;
 }
 
+/*Links*/
 ul {
     list-style: none;
 }
@@ -122,41 +123,63 @@ label #cancel {
 
 .arrivals {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1000px;
+    margin: 50px auto;
+    grid-gap: 20px;
 }
 
-.arrivals-1 {
-    flex: 1;
+.arrivals h2 {
+    grid-column: -1/1;
 }
 
-.arrivals-2 {
-    flex: 1;
+.arrivals img {
+    width: 100%;
 }
 
-.arrivals-3 {
-    flex: 1;
+.products p {
+    grid-column: 2;
 }
 
-.arrivals-text {
-    padding-left: 50px;
-    padding-top: 15px;
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
+
+.products img {
+    grid-column: -1/1;
+}
+
+#product-names {
+    font-weight: bold;
+}
+
+#product-names,
+.arrivals p {
+    margin: 5px;
+}
+
+.arrivals-h2 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.mountain-hiking-img {
+    
+}
+
 
 .cta-end {
-    position: relative;
-    margin-top: 50px;
-    min-height: 200px;
-    background-color: #fff;
+    display: flex;
+    margin-top: 50px auto;
 }
 
 .cta-end-div {
-    display: block;
+    align-items: center;
     text-align: center;
-    vertical-align: center;
-    margin: 100px auto 100px auto;
+    margin: 50px auto 
 }
 
 .cta-explore {
@@ -204,7 +227,7 @@ footer {
 
 /*Navigation mobile*/
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     label #hamburger-icon {
         display: block;
         color: #224F59;
