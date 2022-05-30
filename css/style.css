@@ -166,10 +166,6 @@ label #cancel {
     padding-bottom: 20px;
 }
 
-.mountain-hiking-img {
-    
-}
-
 
 .cta-end {
     display: flex;
@@ -274,4 +270,31 @@ footer {
         grid-template-columns: (2, 1fr);
     }
 
+}
+
+@media(max-width: 400px) {
+    .arrivals {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #welcome-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .arrivals {
+        grid-template-columns: 1fr;
+    }
+    #welcome-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .arrivals {
+        grid-template-columns: 1fr 1fr;
+    }
+    #welcome-text {
+        font-size: 2.5rem;
+    }
 }
