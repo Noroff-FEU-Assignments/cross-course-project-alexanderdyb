@@ -6,6 +6,7 @@ body {
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 p {
@@ -267,13 +268,46 @@ footer {
 
 }
 
+@media (max-width: 400px) {
+    .welcome-content h1 {
+        font-size: 10px;
+    }
+    #statement-1 {
+        font-size: 1.25rem;
+    }
+    #statement-2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #statement-1 {
+        font-size: 1.5rem;
+    }
+    #statement-2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #statement-1 {
+        font-size: 1.75rem;
+    }
+    #statement-2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 855px) {
+    #welcome-text {
+        font-size: 2.5rem;
+    }
+}
+
 @media (min-width: 800px) {
     .arrivals {
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
-    }
-    #welcome-text {
-        font-size: 2.2rem;
     }
 }
 
@@ -281,8 +315,5 @@ footer {
     .arrivals {
         grid-template-columns: repeat(4, 1fr);
 
-    }
-    #welcome-text {
-        font-size: 2.5rem;
     }
 }
