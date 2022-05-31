@@ -1,4 +1,4 @@
-body {
+body, .overflow-mobile-hidden {
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
     color: #232323;
