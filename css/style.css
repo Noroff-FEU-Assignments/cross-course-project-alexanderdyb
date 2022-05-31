@@ -150,6 +150,11 @@ footer {
     margin-right: 10%;
 }
 
+.mountain-hiking-img {
+    display: block;
+    text-align: center;
+}
+
 .arrivals {
     display: grid;
     justify-content: center;
