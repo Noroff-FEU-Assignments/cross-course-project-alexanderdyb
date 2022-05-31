@@ -296,6 +296,9 @@ footer {
     #statement-2 {
         font-size: 1.75rem;
     }
+    body {
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 855px) {
