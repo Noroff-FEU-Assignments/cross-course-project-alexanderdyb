@@ -1,7 +1,6 @@
 html, body, .overflow-mobile-hidden {
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
-    color: #232323;
 }
 *{
     margin: 0;
@@ -9,17 +8,20 @@ html, body, .overflow-mobile-hidden {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.25em;
+    color: #373737;
 }
 
 h1 {
     font-family: 'Montserrat', verdana, sans-serif;
     font-size: 3rem;
     font-weight: bold;
+    color: #373737;
 }
 h2 {
     font-family: 'Open Sans', verdana, sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
+    color: #373737;
 }
 
 /*Links*/
@@ -28,7 +30,7 @@ ul {
 }
 
 a {
-    font-size: 1.25 rem;
+    font-size: 1.25em;
     color: #373737;
     text-decoration: none;
 }
@@ -220,7 +222,7 @@ footer {
     padding-top: 10px;
 }
 
-/*Navigation mobile*/
+/*Media Queries: Navigation mobile*/
 
 @media (max-width: 800px) {
     label #hamburger-icon {
@@ -248,7 +250,7 @@ footer {
     }
 
     nav ul li a {
-        font-size: 1.25rem;
+        font-size: 1.25em;
         color: #fff;
     }
 
@@ -267,24 +269,26 @@ footer {
 
 }
 
+/*Media Queries: Home Page*/
+
 @media (max-width: 400px) {
     .welcome-content h1 {
-        font-size: 2.25rem;
+        font-size: 2.25em;
     }
     #statement-1 {
-        font-size: 1.25rem;
+        font-size: 1.25em;
     }
     #statement-2 {
-        font-size: 1.25rem;
+        font-size: 1.25em;
     }
 }
 
 @media (max-width: 600px) {
     #statement-1 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
     #statement-2 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 }
 
